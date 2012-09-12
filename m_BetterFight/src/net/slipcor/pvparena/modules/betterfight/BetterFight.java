@@ -105,7 +105,7 @@ public class BetterFight extends ArenaModule {
 		if (event.getDamager() instanceof Projectile) {
 			if (event.getDamager() instanceof Snowball) {
 				if (s.toLowerCase().contains("snow")) {
-					event.setDamage(1000);
+					event.setDamage(5);
 				}
 			}
 			if (event.getDamager() instanceof Arrow) {
@@ -129,7 +129,7 @@ public class BetterFight extends ArenaModule {
 	@Override
 	public void parseInfo(Arena arena, CommandSender player) {
 		player.sendMessage("");
-		player.sendMessage("§6Betterfight:§f "
+		player.sendMessage("ï¿½6Betterfight:ï¿½f "
 				+ StringParser.colorVar(arena.cfg.getBoolean("betterfight.activate")));
 	}
 
